@@ -31,7 +31,6 @@ function showHomePage() {
   homePage.classList.remove('hidden');
   aboutPage.classList.add('hidden');
   contactPage.classList.add('hidden');
-  triggerView("homePage");
 }
 
 // Show About Us Page Function
@@ -39,7 +38,6 @@ function showAboutPage() {
   homePage.classList.add('hidden');
   aboutPage.classList.remove('hidden');
   contactPage.classList.add('hidden');
-  triggerView("aboutPage");
 }
 
 // Show Contact Page Function
@@ -47,7 +45,6 @@ function showContactPage() {
   homePage.classList.add('hidden');
   aboutPage.classList.add('hidden');
   contactPage.classList.remove('hidden');
-  triggerView("contactPage");
 }
 
 document.addEventListener("DOMContentLoaded", function () {
