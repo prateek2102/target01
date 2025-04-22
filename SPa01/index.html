@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Our Office</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://assets.adobedtm.com/6a203c8a0ff8/c80f1350aa50/launch-27034b93efcc-development.min.js" async></script>
+  <script>
+    function targetPageParams() {
+      return {
+        "at_property": "c73c7dcf-7367-7424-472f-fbb7b3331111"
+      };
+    }
+  </script>
+  
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Adobe</div>
+    <ul class="nav-links">
+      <li><a href="" id="homeBtn">Home</a></li>
+      <li><a href="#about" id="aboutBtn">About Us</a></li>
+      <li><a href="#contact" id="contactBtn">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Welcome to Our Office</h1>
+    <p>Discover our office spaces and facilities!</p>
+  </header>
+
+  <!-- Main Content -->
+  <div class="content" id="contentArea">
+    <!-- Home Page Content -->
+    <section id="homePage">
+      <h2>Our Office Spaces</h2>
+      <div class="locations">
+        <div class="location" id="cafeteria">
+          <h3>Cafeteria</h3>
+          <p>Our cafeteria is a hub for relaxation and nourishment. Whether you're looking to grab a quick snack, enjoy a freshly prepared meal, or catch up with colleagues, the cafeteria offers a variety of options. We provide healthy meals, coffee, pastries.</p>
+        </div>
+        <div class="location" id="library">
+          <h3>Library</h3>
+          <p>Our library is designed for quiet reflection and deep work. With a wide selection of books ranging from industry-related reads to fiction, it's the ideal place to focus, read, or find inspiration. The space offers comfortable seating and a calm environment .</p>
+        </div>
+        <div class="location" id="huddleRoom">
+          <h3>Huddle Rooms</h3>
+          <p>Our huddle rooms are dedicated spaces designed for collaboration and teamwork. Whether it's brainstorming sessions, small meetings, or quick video calls, these rooms provide privacy and comfort. Each room is equipped with modern technology.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Page Content -->
+    <section id="aboutPage" class="hidden content about-section animate-on-scroll">
+      <div class="about-container">
+        <div class="about-text">
+          <h2>About Us</h2>
+          <p>
+            We are a creative company that fosters innovation and teamwork. <br />
+            Our office spaces are designed to enhance productivity and well-being. <br />
+            At our core, we believe in collaboration, design excellence, and creating a thriving workplace culture.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="/team.jpeg" style="max-width: 68%;" alt="Team Collaboration">
+        </div>
+      </div>
+    </section>
+    
+    <section id="contactPage" class="hidden">
+      <h2>Contact Us</h2>
+      <p>If you have any questions, feel free to reach out!</p>
+      
+      <div class="form-wrapper">
+        <form id="contactForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+      
+          <label for="question">Question:</label>
+          <input type="text" id="question" name="question" required> 
+      
+          <button type="submit">Send Message</button>
+        </form>
+        
+        <div id="thankYouMessage"  style="display: none; margin-top: 20px; color: green; font-weight: bold;">
+          Thank you for filling your details!
+        </div>
+      </div>
+    </section>
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
