@@ -9,13 +9,6 @@ const homePage = document.getElementById('homePage');
 const aboutPage = document.getElementById('aboutPage');
 const contactPage = document.getElementById('contactPage');
 
-window.targetPageParams = function()
-    {
-        return {
-            "at_property": "b1726d0d-8499-90c2-4888-c4ee371789c2"
-          };
-    };
-
 // Show Home Page by Default
 window.onload = () => {
   showHomePage();
