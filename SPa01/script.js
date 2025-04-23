@@ -14,6 +14,33 @@ window.onload = () => {
   showHomePage();
 };
 
+//mbox for target
+ window.addEventListener('DOMContentLoaded', function () {
+    // Create a container for the Adobe Target offer
+    const offerContainer = document.createElement('div');
+    offerContainer.id = 'prateek-offer-container';
+
+    // Insert it just before the content div
+    const contentDiv = document.querySelector('.content');
+    if (contentDiv && contentDiv.parentNode) {
+      contentDiv.parentNode.insertBefore(offerContainer, contentDiv);
+    }
+
+    // Fetch and apply offer from Adobe Target
+    adobe.target.getOffer({
+      mbox: 'prateek-offer-mbox', // Your custom mbox name
+      success: function (offer) {
+        adobe.target.applyOffer({
+          offer: offer,
+          selector: '#prateek-offer-container'
+        });
+      },
+      error: function (status, error) {
+        console.error('Target offer error:', status, error);
+      }
+    });
+  });
+
 // Event Listeners
 homeBtn.addEventListener('click', showHomePage);
 aboutBtn.addEventListener('click', showAboutPage);
