@@ -4,9 +4,9 @@ const aboutBtn = document.getElementById('aboutBtn');
 const contactBtn = document.getElementById('contactBtn');
 const contentArea = document.getElementById('contentArea');
 
-window.targetGlobalSettings = {  
-   cookieDomain: "target-test01.netlify.app" // set cookies on the subdomain
-};
+// window.targetGlobalSettings = {  
+//    cookieDomain: "target-test01.netlify.app" // set cookies on the subdomain
+// };
 
 // Sections
 const homePage = document.getElementById('homePage');
